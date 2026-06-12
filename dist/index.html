@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="羊奶呼呼机" />
+  <meta name="theme-color" content="#F2F2F7" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="apple-touch-icon" href="./icon-192.jpeg" />
+  <link rel="icon" type="image/jpeg" href="./icon-192.jpeg" />
+  <title>羊奶呼呼机</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html, body, #root { height: 100%; width: 100%; overflow: hidden; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif; background: #F8F9FB; }
+    .yn-boot { display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:18px; }
+    .yn-boot-logo { width:60px;height:60px;border-radius:16px;object-fit:cover;box-shadow:0 6px 24px rgba(124,92,252,.2);animation:ynPulse 1.8s ease-in-out infinite; }
+    .yn-boot-text { font-size:14px;color:#8E8E93;letter-spacing:.3px; }
+    .yn-ring { width:36px;height:36px;border:3px solid rgba(124,92,252,.15);border-top-color:#7C5CFC;border-radius:50%;animation:ynSpin .8s linear infinite; }
+    @keyframes ynSpin { to{transform:rotate(360deg)} }
+    @keyframes ynPulse { 0%,100%{transform:scale(1);box-shadow:0 6px 24px rgba(124,92,252,.2)} 50%{transform:scale(1.05);box-shadow:0 8px 32px rgba(124,92,252,.35)} }
+  </style>
+  <script type="module" crossorigin src="./assets/index-Dk8KHEfJ.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/vendor-Dgs6-BMC.js">
+  <link rel="modulepreload" crossorigin href="./assets/semi-pgC12X-T.js">
+  <link rel="stylesheet" crossorigin href="./assets/semi-KXCzngpp.css">
+  <link rel="stylesheet" crossorigin href="./assets/index-CpSQnw-8.css">
+</head>
+<body>
+  <div id="root">
+    <div class="yn-boot" id="yn-boot">
+      <img class="yn-boot-logo" src="./assets/logo-BECVGvbS.jpeg" alt="" />
+      <div class="yn-ring"></div>
+      <div class="yn-boot-text">羊奶呼呼机 · 加载中</div>
+    </div>
+  </div>
+
+  <script>
+
+(function() {
+     const search = window.location.search;
+     if (search?.includes('super_debug007')) {
+    var script = document.createElement('script');
+    script.src = 'https://unpkg.com/vconsole@latest/dist/vconsole.min.js';
+    script.onload = () => { new window.VConsole(); };
+    document.head.appendChild(script);
+     }
+}())
+
+  </script>
+</body>
+</html>
